@@ -19,8 +19,6 @@
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
-    <StartupObject>
-    </StartupObject>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -47,6 +45,8 @@
     <DebugType>full</DebugType>
     <PlatformTarget>x86</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <OutputPath>bin\x86\Release\</OutputPath>
@@ -55,12 +55,9 @@
     <DebugType>pdbonly</DebugType>
     <PlatformTarget>x86</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="LightDatamodel, Version=1.1.0.0, Culture=neutral, PublicKeyToken=180db27b8c387f04, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\thirdparty\LightDataModel\LightDatamodel.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -69,6 +66,9 @@
     <Reference Include="System.Xml" />
     <Reference Include="UnixSupport">
       <HintPath>..\..\thirdparty\UnixSupport\UnixSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="LightDatamodel">
+      <HintPath>..\..\thirdparty\LightDataModel\LightDatamodel.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -14,8 +14,6 @@
     <FileAlignment>512</FileAlignment>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>Duplicati.snk</AssemblyOriginatorKeyFile>
-    <StartupObject>
-    </StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
@@ -64,12 +62,11 @@
     <Reference Include="AlphaFS">
       <HintPath>..\..\..\thirdparty\alphavss\Bin\AlphaFS.dll</HintPath>
     </Reference>
-    <Reference Include="AlphaVSS.Common, Version=1.0.9156.0, Culture=neutral, PublicKeyToken=3033cf2dbd31cad3, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\thirdparty\alphavss\Bin\AlphaVSS.Common.dll</HintPath>
-    </Reference>
     <Reference Include="UnixSupport">
       <HintPath>..\..\..\thirdparty\UnixSupport\UnixSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="AlphaVSS.Common">
+      <HintPath>..\..\..\thirdparty\alphavss\Bin\AlphaVSS.Common.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
